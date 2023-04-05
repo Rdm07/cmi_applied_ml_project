@@ -6,7 +6,7 @@ import PIL.Image as Image
 
 from torch.utils.data import DataLoader, Dataset
 
-def load_labels_csv(data_folder_path: str) -> tuple(list, list, list):
+def load_labels_csv(data_folder_path: str) -> tuple[list, list, list]:
 	"""
 	A Function to load the labels.csv file and get 3 lists of 
 	[label_id, file_path, label_name, card_type, dataset_type]
