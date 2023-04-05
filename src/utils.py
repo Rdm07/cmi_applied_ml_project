@@ -18,6 +18,9 @@ def load_labels_csv(data_folder_path: str) -> tuple(list, list, list):
 
 	del full_list[0]
 
+	for item in full_list:
+		item[1] = os.path.join(data_folder_path, item[1])
+
 	list_train = [x for x in full_list if x[-1] == 'train']
 	list_val = [x for x in full_list if x[-1] == 'valid']
 	list_test = [x for x in full_list if x[-1] == 'test']
