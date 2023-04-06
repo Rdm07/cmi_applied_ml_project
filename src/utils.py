@@ -3,6 +3,7 @@ import csv
 import torch
 import numpy as np
 import PIL.Image as Image
+import torch.backends.cudnn as cudnn
 
 from torch.utils.data import DataLoader, Dataset
 
@@ -91,3 +92,19 @@ def get_mean_and_std(data_list: list) -> tuple[float, float]:
     mean.div_(len(dataset))
     std.div_(len(dataset))
     return mean, std
+
+def parallelize_model(model, device):
+	if torch.cuda.is_available():
+		model = model.to(device)
+		model = torch.nn.DataParallel(model, device_ids=range(torch.cuda.device_count()))
+		cudnn.benchmark = True
+		return model
+
+def unparallelize_model(model):
+	try:
+		while 1:
+			# to avoid nested dataparallel problem
+			model = model.module
+	except AttributeError:
+		pass
+	return model
