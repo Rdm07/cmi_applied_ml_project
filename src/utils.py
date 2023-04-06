@@ -58,14 +58,14 @@ class dataloader(Dataset):
 	Dataset class to read img file from filepath 
 	and return Pillow Image object with its label_id
 	"""
-	def __init__(self, imgs, transform=None):
-		self.imgs = imgs
+	def __init__(self, list1, transform=None):
+		self.list1 = list1
 		self.transform = transform
 	
 	def __getitem__(self, index):
-		img = self.imgs[index]
-		lab = np.array([int(int(img[1]) > 0)])[0]
-		png = Image.open(img[0]).convert('RGB') # ori: RGB, do not convert to numpy, keep it as PIL image to apply transform
+		list2 = self.list1[index]
+		lab = list2[0]
+		png = Image.open(list2[1]).convert('RGB') # ori: RGB, do not convert to numpy, keep it as PIL image to apply transform
 
 		if self.transform:
 			png = self.transform(png)
@@ -73,5 +73,21 @@ class dataloader(Dataset):
 		return png, lab
 
 	def __len__(self):
-		return len(self.imgs)
+		return len(self.list1)
 
+def get_mean_and_std(data_list: list) -> tuple[float, float]:
+    '''
+	Compute the mean and std value of dataset.
+	'''
+    dataset = dataloader(data_list)
+    dataloader = torch.utils.data.DataLoader(dataset, batch_size=1, shuffle=True, num_workers=2)
+    mean = torch.zeros(3)
+    std = torch.zeros(3)
+    print('==> Computing mean and std..')
+    for inputs, targets in dataloader:
+        for i in range(3):
+            mean[i] += inputs[:,i,:,:].mean()
+            std[i] += inputs[:,i,:,:].std()
+    mean.div_(len(dataset))
+    std.div_(len(dataset))
+    return mean, std
