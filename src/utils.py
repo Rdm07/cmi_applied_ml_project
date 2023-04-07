@@ -4,6 +4,7 @@ import torch
 import numpy as np
 import PIL.Image as Image
 import torch.backends.cudnn as cudnn
+import matplotlib.pyplot as plt
 
 from torch.utils.data import DataLoader, Dataset
 
@@ -108,3 +109,16 @@ def unparallelize_model(model):
 	except AttributeError:
 		pass
 	return model
+
+def plot_tra_val_loss(tra_val_loss):
+	epochs = list(range(1,len(tra_val_loss)+1))
+	train_loss = [x[0] for x in tra_val_loss]
+	val_loss = [x[1] for x in tra_val_loss]
+	plt.plot(x=epochs, y=train_loss, label='Train Loss')
+	plt.plot(x=epochs, y=val_loss, label='Validation Loss')
+	plt.title('Training and Validation Loss per epoch')
+	plt.ylabel('Loss')
+	plt.xlabel('Epochs')
+	plt.legend()
+	plt.show()
+
