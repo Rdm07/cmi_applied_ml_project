@@ -66,7 +66,7 @@ class dataloader(Dataset):
 	
 	def __getitem__(self, index):
 		list2 = self.list1[index]
-		lab = list2[0]
+		lab = int(list2[0])
 		png = Image.open(list2[1]).convert('RGB') # ori: RGB, do not convert to numpy, keep it as PIL image to apply transform
 
 		if self.transform:
