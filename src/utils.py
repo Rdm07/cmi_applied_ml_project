@@ -20,6 +20,8 @@ def load_paths_from_csv(data_folder_path: str) -> tuple[list, list, list]:
 
 	del full_list[0]
 
+	full_list = [x for x in full_list if 'output' not in x[1]]
+
 	for item in full_list:
 		item[1] = os.path.join(data_folder_path, item[1])
 
@@ -77,11 +79,10 @@ class dataloader(Dataset):
 	def __len__(self):
 		return len(self.list1)
 
-def get_mean_and_std(data_list: list) -> tuple[float, float]:
+def get_mean_and_std(dataset) -> tuple[float, float]:
     '''
 	Compute the mean and std value of dataset.
 	'''
-    dataset = dataloader(data_list)
     dataloader = torch.utils.data.DataLoader(dataset, batch_size=1, shuffle=True, num_workers=2)
     mean = torch.zeros(3)
     std = torch.zeros(3)
@@ -114,8 +115,8 @@ def plot_tra_val_loss(tra_val_loss):
 	epochs = list(range(1,len(tra_val_loss)+1))
 	train_loss = [x[0] for x in tra_val_loss]
 	val_loss = [x[1] for x in tra_val_loss]
-	plt.plot(x=epochs, y=train_loss, label='Train Loss')
-	plt.plot(x=epochs, y=val_loss, label='Validation Loss')
+	plt.plot(epochs, train_loss, label='Train Loss')
+	plt.plot(epochs, val_loss, label='Validation Loss')
 	plt.title('Training and Validation Loss per epoch')
 	plt.ylabel('Loss')
 	plt.xlabel('Epochs')
