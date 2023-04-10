@@ -231,7 +231,8 @@ def run_training(model, criterion, num_epochs, trainer = args.trainer, train_loa
 
 				saved_model_name = args.model_name
 				torch.save(state, os.path.join(save_point, saved_model_name + '_' + str(round(best_f1,3)) + '_' + str(epoch) + '.t7'))
-				print('=======================================================================')
+				
+			print('=======================================================================')
 
 	time_elapsed = time.time() - start_training
 	print('Training complete in {:.0f}m {:.0f}s'.format(time_elapsed // 60, time_elapsed % 60))
