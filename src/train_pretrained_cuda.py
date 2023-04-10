@@ -160,7 +160,7 @@ def run_training(model, criterion, num_epochs, trainer = args.trainer, train_loa
 		elif epoch < 3*(num_epochs//4): lr = args.lr/10
 		else: lr = args.lr/20
 
-		if epoch > 1:
+		if epoch > 2:
 			for param in model.parameters():
 				param.requires_grad = True
 
