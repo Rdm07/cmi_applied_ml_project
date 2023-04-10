@@ -70,6 +70,7 @@ class dataloader(Dataset):
 		list2 = self.list1[index]
 		lab = int(list2[0])
 		png = Image.open(list2[1]).convert('RGB') # ori: RGB, do not convert to numpy, keep it as PIL image to apply transform
+		png = png.resize((224,224))
 
 		if self.transform:
 			png = self.transform(png)

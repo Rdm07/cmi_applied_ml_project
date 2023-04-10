@@ -3,6 +3,8 @@ import torch, torchvision
 import torch.nn as nn
 import torchvision.models as models
 
+from torchvision.models import ResNet18_Weights
+
 from models import *
 
 file_dir = os.path.dirname(__file__)
@@ -11,4 +13,3 @@ file_dir = os.path.dirname(__file__)
 
 # Template to save a pytorch model
 # torch.save(model_name, os.path.join(file_dir, 'saved_models/model1.pt'))
-
