@@ -160,7 +160,7 @@ def run_training(model, criterion, num_epochs, trainer = args.trainer, train_loa
 		else: lr = args.lr/20
 
 		if trainer == 'adam':
-			optimizer = optim.Adam(lr=lr)
+			optimizer = optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=lr)
 		elif trainer == 'sgd':
 			optimizer = optim.SGD(filter(lambda p: p.requires_grad, model.parameters()), lr=lr, momentum=0.9, weight_decay=args.weight_decay)
 		else:
