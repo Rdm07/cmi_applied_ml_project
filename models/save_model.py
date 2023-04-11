@@ -13,3 +13,7 @@ file_dir = os.path.dirname(__file__)
 
 # Template to save a pytorch model
 # torch.save(model_name, os.path.join(file_dir, 'saved_models/model1.pt'))
+
+
+# model_name = models.resnet18(weights=ResNet18_Weights.IMAGENET1K_V1)
+# torch.save(model_name, os.path.join(file_dir, 'saved_models/rohan_model1.pt'))
