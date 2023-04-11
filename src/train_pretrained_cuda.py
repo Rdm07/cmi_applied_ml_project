@@ -55,10 +55,6 @@ data_path = args.data_folder
 train_list, val_list, test_list = load_paths_from_csv(data_path)
 labels_dict = create_label_dict(train_list)
 
-# Getting input image size
-img1 = Image.open(train_list[0][1]).convert('RGB')
-input_size = img1.size
-
 # Calculating Mean, Std Dev for training images
 mean, std = args.mean, args.std
 
@@ -70,8 +66,6 @@ if mean is None or std is None:
 data_transforms = {
 	'train': transforms.Compose([
 		transforms.RandomRotation(22),
-		transforms.CenterCrop(224),
-		transforms.Resize(input_size),
 		transforms.RandomHorizontalFlip(),  # simple data augmentation
 		transforms.RandomVerticalFlip(),
 		transforms.ColorJitter(brightness=0.3, contrast=0.3, saturation=0.3, hue=0.1),
@@ -79,8 +73,6 @@ data_transforms = {
 		transforms.Normalize(mean, std)]),
 
 	'val': transforms.Compose([
-		transforms.CenterCrop(224),
-		transforms.Resize(input_size),
 		transforms.ToTensor(),
 		transforms.Normalize(mean, std)
 	]),
