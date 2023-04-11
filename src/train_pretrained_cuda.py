@@ -70,7 +70,7 @@ if mean is None or std is None:
 data_transforms = {
 	'train': transforms.Compose([
 		transforms.RandomRotation(22),
-		transforms.CenterCrop(350),
+		transforms.CenterCrop(224),
 		transforms.Resize(input_size),
 		transforms.RandomHorizontalFlip(),  # simple data augmentation
 		transforms.RandomVerticalFlip(),
@@ -79,7 +79,7 @@ data_transforms = {
 		transforms.Normalize(mean, std)]),
 
 	'val': transforms.Compose([
-		transforms.CenterCrop(350),
+		transforms.CenterCrop(224),
 		transforms.Resize(input_size),
 		transforms.ToTensor(),
 		transforms.Normalize(mean, std)
