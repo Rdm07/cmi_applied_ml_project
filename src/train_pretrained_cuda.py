@@ -4,6 +4,7 @@ import argparse, copy
 import numpy as np
 import torch.optim as optim
 import torch.nn as nn
+import torchvision
 
 from torchvision import transforms
 from sklearn.metrics import accuracy_score, hamming_loss, roc_auc_score, f1_score
@@ -105,7 +106,9 @@ def run_validation(model, criterion, val_loader):
 			inputs = inputs.to(torch.float).to(device)
 			targets = targets.to(torch.long).to(device)
 			output = model(inputs)
-			if type(output) == tuple:
+			
+			# For InceptionNet_v3
+			if type(output) == torchvision.models.inception.InceptionOutputs:
 				output,_ = output
 			
 			_, preds = torch.max(output.data, 1)
@@ -180,7 +183,9 @@ def run_training(model, criterion, num_epochs, trainer = args.trainer, train_loa
 
 			optimizer.zero_grad()
 			output = model(inputs)
-			if type(output) == tuple:
+
+			# For InceptionNet_v3
+			if type(output) == torchvision.models.inception.InceptionOutputs:
 				output,_ = output
 			
 			_, preds = torch.max(output.data, 1)
