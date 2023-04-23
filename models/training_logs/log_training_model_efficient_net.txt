@@ -1,0 +1,266 @@
+Batch Size: 16
+Using GPU:  True
+Loading model at  ./models/saved_models/model_efficient_net.pt...
+Start training ... 
+Epoch 1/25
+lr: 0.010000
+--------------------------------------------------
+| Epoch:[1][100/476]	Train_Loss: 3.7663	Accuracy: 0.0900	Time: 0.60 mins
+| Epoch:[1][200/476]	Train_Loss: 3.5750	Accuracy: 0.1266	Time: 1.03 mins
+| Epoch:[1][300/476]	Train_Loss: 3.4431	Accuracy: 0.1490	Time: 1.46 mins
+| Epoch:[1][400/476]	Train_Loss: 3.3461	Accuracy: 0.1664	Time: 1.89 mins
+
+
+Epoch: 1/25	Val_Loss: 2.6853	Accuracy: 0.3472	F1-score: 0.3062	0.760mins
+Saving model
+=======================================================================
+Epoch 2/25
+lr: 0.010000
+--------------------------------------------------
+| Epoch:[2][100/476]	Train_Loss: 2.8221	Accuracy: 0.2581	Time: 0.59 mins
+| Epoch:[2][200/476]	Train_Loss: 2.7904	Accuracy: 0.2619	Time: 1.01 mins
+| Epoch:[2][300/476]	Train_Loss: 2.7690	Accuracy: 0.2679	Time: 1.44 mins
+| Epoch:[2][400/476]	Train_Loss: 2.7518	Accuracy: 0.2727	Time: 1.87 mins
+
+Epoch: 2/25	Val_Loss: 2.3502	Accuracy: 0.3547	F1-score: 0.3197	0.768mins
+Saving model
+=======================================================================
+Epoch 3/25
+lr: 0.010000
+--------------------------------------------------
+| Epoch:[3][100/476]	Train_Loss: 2.5654	Accuracy: 0.2956	Time: 0.59 mins
+| Epoch:[3][200/476]	Train_Loss: 2.5876	Accuracy: 0.2938	Time: 1.02 mins
+| Epoch:[3][300/476]	Train_Loss: 2.5755	Accuracy: 0.2942	Time: 1.44 mins
+| Epoch:[3][400/476]	Train_Loss: 2.5702	Accuracy: 0.2944	Time: 1.87 mins
+
+Epoch: 3/25	Val_Loss: 2.1836	Accuracy: 0.3774	F1-score: 0.3374	0.764mins
+Saving model
+=======================================================================
+Epoch 4/25
+lr: 0.010000
+--------------------------------------------------
+| Epoch:[4][100/476]	Train_Loss: 1.9490	Accuracy: 0.4313	Time: 2.32 mins
+| Epoch:[4][200/476]	Train_Loss: 1.7094	Accuracy: 0.5019	Time: 4.33 mins
+| Epoch:[4][300/476]	Train_Loss: 1.5485	Accuracy: 0.5540	Time: 6.34 mins
+| Epoch:[4][400/476]	Train_Loss: 1.4082	Accuracy: 0.5942	Time: 8.34 mins
+
+Epoch: 4/25	Val_Loss: 0.3218	Accuracy: 0.9019	F1-score: 0.9004	0.851mins
+Saving model
+=======================================================================
+Epoch 5/25
+lr: 0.005000
+--------------------------------------------------
+| Epoch:[5][100/476]	Train_Loss: 0.6449	Accuracy: 0.8150	Time: 2.24 mins
+| Epoch:[5][200/476]	Train_Loss: 0.6347	Accuracy: 0.8128	Time: 4.24 mins
+| Epoch:[5][300/476]	Train_Loss: 0.6109	Accuracy: 0.8213	Time: 6.25 mins
+| Epoch:[5][400/476]	Train_Loss: 0.5991	Accuracy: 0.8237	Time: 8.25 mins
+
+Epoch: 5/25	Val_Loss: 0.1328	Accuracy: 0.9585	F1-score: 0.9577	0.804mins
+Saving model
+=======================================================================
+Epoch 6/25
+lr: 0.005000
+--------------------------------------------------
+| Epoch:[6][100/476]	Train_Loss: 0.4492	Accuracy: 0.8556	Time: 2.21 mins
+| Epoch:[6][200/476]	Train_Loss: 0.4150	Accuracy: 0.8706	Time: 4.22 mins
+| Epoch:[6][300/476]	Train_Loss: 0.4027	Accuracy: 0.8754	Time: 6.23 mins
+| Epoch:[6][400/476]	Train_Loss: 0.4069	Accuracy: 0.8747	Time: 8.25 mins
+
+Epoch: 6/25	Val_Loss: 0.1155	Accuracy: 0.9585	F1-score: 0.9574	0.799mins
+=======================================================================
+Epoch 7/25
+lr: 0.005000
+--------------------------------------------------
+| Epoch:[7][100/476]	Train_Loss: 0.3730	Accuracy: 0.8900	Time: 2.20 mins
+| Epoch:[7][200/476]	Train_Loss: 0.3520	Accuracy: 0.8959	Time: 4.20 mins
+| Epoch:[7][300/476]	Train_Loss: 0.3462	Accuracy: 0.8960	Time: 6.20 mins
+| Epoch:[7][400/476]	Train_Loss: 0.3412	Accuracy: 0.8988	Time: 8.21 mins
+
+Epoch: 7/25	Val_Loss: 0.0628	Accuracy: 0.9736	F1-score: 0.9733	0.797mins
+Saving model
+=======================================================================
+Epoch 8/25
+lr: 0.005000
+--------------------------------------------------
+| Epoch:[8][100/476]	Train_Loss: 0.3149	Accuracy: 0.9006	Time: 2.23 mins
+| Epoch:[8][200/476]	Train_Loss: 0.2880	Accuracy: 0.9116	Time: 4.24 mins
+| Epoch:[8][300/476]	Train_Loss: 0.2775	Accuracy: 0.9125	Time: 6.24 mins
+| Epoch:[8][400/476]	Train_Loss: 0.2748	Accuracy: 0.9131	Time: 8.24 mins
+
+Epoch: 8/25	Val_Loss: 0.0612	Accuracy: 0.9811	F1-score: 0.9809	0.829mins
+Saving model
+=======================================================================
+Epoch 9/25
+lr: 0.002500
+--------------------------------------------------
+| Epoch:[9][100/476]	Train_Loss: 0.2198	Accuracy: 0.9300	Time: 2.22 mins
+| Epoch:[9][200/476]	Train_Loss: 0.2075	Accuracy: 0.9356	Time: 4.22 mins
+| Epoch:[9][300/476]	Train_Loss: 0.2079	Accuracy: 0.9369	Time: 6.21 mins
+| Epoch:[9][400/476]	Train_Loss: 0.2063	Accuracy: 0.9380	Time: 8.21 mins
+
+Epoch: 9/25	Val_Loss: 0.0536	Accuracy: 0.9849	F1-score: 0.9848	0.802mins
+Saving model
+=======================================================================
+Epoch 10/25
+lr: 0.002500
+--------------------------------------------------
+| Epoch:[10][100/476]	Train_Loss: 0.1904	Accuracy: 0.9450	Time: 2.20 mins
+| Epoch:[10][200/476]	Train_Loss: 0.1806	Accuracy: 0.9478	Time: 4.19 mins
+| Epoch:[10][300/476]	Train_Loss: 0.1815	Accuracy: 0.9477	Time: 6.19 mins
+| Epoch:[10][400/476]	Train_Loss: 0.1779	Accuracy: 0.9487	Time: 8.18 mins
+
+Epoch: 10/25	Val_Loss: 0.0414	Accuracy: 0.9925	F1-score: 0.9924	0.865mins
+Saving model
+=======================================================================
+Epoch 11/25
+lr: 0.002500
+--------------------------------------------------
+| Epoch:[11][100/476]	Train_Loss: 0.1484	Accuracy: 0.9563	Time: 2.18 mins
+| Epoch:[11][200/476]	Train_Loss: 0.1516	Accuracy: 0.9566	Time: 4.17 mins
+| Epoch:[11][300/476]	Train_Loss: 0.1477	Accuracy: 0.9571	Time: 6.17 mins
+| Epoch:[11][400/476]	Train_Loss: 0.1506	Accuracy: 0.9563	Time: 8.17 mins
+
+Epoch: 11/25	Val_Loss: 0.0502	Accuracy: 0.9887	F1-score: 0.9886	0.811mins
+=======================================================================
+Epoch 12/25
+lr: 0.002500
+--------------------------------------------------
+| Epoch:[12][100/476]	Train_Loss: 0.1654	Accuracy: 0.9500	Time: 2.19 mins
+| Epoch:[12][200/476]	Train_Loss: 0.1525	Accuracy: 0.9531	Time: 4.19 mins
+| Epoch:[12][300/476]	Train_Loss: 0.1496	Accuracy: 0.9577	Time: 6.19 mins
+| Epoch:[12][400/476]	Train_Loss: 0.1453	Accuracy: 0.9589	Time: 8.18 mins
+
+Epoch: 12/25	Val_Loss: 0.0415	Accuracy: 0.9887	F1-score: 0.9886	0.807mins
+=======================================================================
+Epoch 13/25
+lr: 0.001000
+--------------------------------------------------
+| Epoch:[13][100/476]	Train_Loss: 0.1398	Accuracy: 0.9563	Time: 2.19 mins
+| Epoch:[13][200/476]	Train_Loss: 0.1200	Accuracy: 0.9641	Time: 4.18 mins
+| Epoch:[13][300/476]	Train_Loss: 0.1260	Accuracy: 0.9644	Time: 6.18 mins
+| Epoch:[13][400/476]	Train_Loss: 0.1229	Accuracy: 0.9652	Time: 8.18 mins
+
+Epoch: 13/25	Val_Loss: 0.0436	Accuracy: 0.9887	F1-score: 0.9886	0.822mins
+=======================================================================
+Epoch 14/25
+lr: 0.001000
+--------------------------------------------------
+| Epoch:[14][100/476]	Train_Loss: 0.1092	Accuracy: 0.9700	Time: 2.20 mins
+| Epoch:[14][200/476]	Train_Loss: 0.1102	Accuracy: 0.9691	Time: 4.20 mins
+| Epoch:[14][300/476]	Train_Loss: 0.1090	Accuracy: 0.9690	Time: 6.20 mins
+| Epoch:[14][400/476]	Train_Loss: 0.1097	Accuracy: 0.9675	Time: 8.19 mins
+
+Epoch: 14/25	Val_Loss: 0.0382	Accuracy: 0.9887	F1-score: 0.9886	0.803mins
+=======================================================================
+Epoch 15/25
+lr: 0.001000
+--------------------------------------------------
+| Epoch:[15][100/476]	Train_Loss: 0.0985	Accuracy: 0.9694	Time: 2.19 mins
+| Epoch:[15][200/476]	Train_Loss: 0.0981	Accuracy: 0.9722	Time: 4.18 mins
+| Epoch:[15][300/476]	Train_Loss: 0.1007	Accuracy: 0.9708	Time: 6.18 mins
+| Epoch:[15][400/476]	Train_Loss: 0.1034	Accuracy: 0.9709	Time: 8.18 mins
+
+Epoch: 15/25	Val_Loss: 0.0451	Accuracy: 0.9887	F1-score: 0.9886	0.814mins
+=======================================================================
+Epoch 16/25
+lr: 0.001000
+--------------------------------------------------
+| Epoch:[16][100/476]	Train_Loss: 0.0896	Accuracy: 0.9762	Time: 2.20 mins
+| Epoch:[16][200/476]	Train_Loss: 0.0856	Accuracy: 0.9772	Time: 4.20 mins
+| Epoch:[16][300/476]	Train_Loss: 0.0941	Accuracy: 0.9731	Time: 6.19 mins
+| Epoch:[16][400/476]	Train_Loss: 0.0929	Accuracy: 0.9733	Time: 8.18 mins
+
+Epoch: 16/25	Val_Loss: 0.0425	Accuracy: 0.9887	F1-score: 0.9886	0.859mins
+=======================================================================
+Epoch 17/25
+lr: 0.001000
+--------------------------------------------------
+| Epoch:[17][100/476]	Train_Loss: 0.0934	Accuracy: 0.9762	Time: 2.22 mins
+| Epoch:[17][200/476]	Train_Loss: 0.0922	Accuracy: 0.9759	Time: 4.23 mins
+| Epoch:[17][300/476]	Train_Loss: 0.0918	Accuracy: 0.9748	Time: 6.23 mins
+| Epoch:[17][400/476]	Train_Loss: 0.0913	Accuracy: 0.9753	Time: 8.23 mins
+
+Epoch: 17/25	Val_Loss: 0.0362	Accuracy: 0.9925	F1-score: 0.9924	0.794mins
+=======================================================================
+Epoch 18/25
+lr: 0.001000
+--------------------------------------------------
+| Epoch:[18][100/476]	Train_Loss: 0.0928	Accuracy: 0.9738	Time: 2.21 mins
+| Epoch:[18][200/476]	Train_Loss: 0.0852	Accuracy: 0.9759	Time: 4.20 mins
+| Epoch:[18][300/476]	Train_Loss: 0.0861	Accuracy: 0.9769	Time: 6.57 mins
+| Epoch:[18][400/476]	Train_Loss: 0.0875	Accuracy: 0.9758	Time: 9.08 mins
+
+Epoch: 18/25	Val_Loss: 0.0396	Accuracy: 0.9849	F1-score: 0.9850	0.814mins
+=======================================================================
+Epoch 19/25
+lr: 0.000500
+--------------------------------------------------
+| Epoch:[19][100/476]	Train_Loss: 0.0870	Accuracy: 0.9738	Time: 2.20 mins
+| Epoch:[19][200/476]	Train_Loss: 0.0824	Accuracy: 0.9753	Time: 4.21 mins
+| Epoch:[19][300/476]	Train_Loss: 0.0843	Accuracy: 0.9756	Time: 6.20 mins
+| Epoch:[19][400/476]	Train_Loss: 0.0826	Accuracy: 0.9758	Time: 8.19 mins
+
+Epoch: 19/25	Val_Loss: 0.0377	Accuracy: 0.9849	F1-score: 0.9850	0.820mins
+=======================================================================
+Epoch 20/25
+lr: 0.000500
+--------------------------------------------------
+| Epoch:[20][100/476]	Train_Loss: 0.0777	Accuracy: 0.9806	Time: 2.22 mins
+| Epoch:[20][200/476]	Train_Loss: 0.0820	Accuracy: 0.9788	Time: 4.22 mins
+| Epoch:[20][300/476]	Train_Loss: 0.0890	Accuracy: 0.9746	Time: 6.22 mins
+| Epoch:[20][400/476]	Train_Loss: 0.0900	Accuracy: 0.9739	Time: 8.22 mins
+
+Epoch: 20/25	Val_Loss: 0.0434	Accuracy: 0.9849	F1-score: 0.9850	0.821mins
+=======================================================================
+Epoch 21/25
+lr: 0.000500
+--------------------------------------------------
+| Epoch:[21][100/476]	Train_Loss: 0.0856	Accuracy: 0.9744	Time: 2.19 mins
+| Epoch:[21][200/476]	Train_Loss: 0.0833	Accuracy: 0.9769	Time: 4.18 mins
+| Epoch:[21][300/476]	Train_Loss: 0.0821	Accuracy: 0.9775	Time: 6.18 mins
+| Epoch:[21][400/476]	Train_Loss: 0.0825	Accuracy: 0.9767	Time: 8.18 mins
+
+Epoch: 21/25	Val_Loss: 0.0408	Accuracy: 0.9887	F1-score: 0.9886	0.808mins
+=======================================================================
+Epoch 22/25
+lr: 0.000500
+--------------------------------------------------
+| Epoch:[22][100/476]	Train_Loss: 0.0806	Accuracy: 0.9762	Time: 2.20 mins
+| Epoch:[22][200/476]	Train_Loss: 0.0730	Accuracy: 0.9797	Time: 4.20 mins
+| Epoch:[22][300/476]	Train_Loss: 0.0755	Accuracy: 0.9783	Time: 6.19 mins
+| Epoch:[22][400/476]	Train_Loss: 0.0719	Accuracy: 0.9798	Time: 8.18 mins
+
+Epoch: 22/25	Val_Loss: 0.0408	Accuracy: 0.9849	F1-score: 0.9848	0.819mins
+=======================================================================
+Epoch 23/25
+lr: 0.000500
+--------------------------------------------------
+| Epoch:[23][100/476]	Train_Loss: 0.0738	Accuracy: 0.9800	Time: 2.20 mins
+| Epoch:[23][200/476]	Train_Loss: 0.0719	Accuracy: 0.9819	Time: 4.20 mins
+| Epoch:[23][300/476]	Train_Loss: 0.0794	Accuracy: 0.9790	Time: 6.19 mins
+| Epoch:[23][400/476]	Train_Loss: 0.0771	Accuracy: 0.9791	Time: 8.19 mins
+
+Epoch: 23/25	Val_Loss: 0.0385	Accuracy: 0.9887	F1-score: 0.9886	0.817mins
+=======================================================================
+Epoch 24/25
+lr: 0.000500
+--------------------------------------------------
+| Epoch:[24][100/476]	Train_Loss: 0.0751	Accuracy: 0.9800	Time: 2.22 mins
+| Epoch:[24][200/476]	Train_Loss: 0.0731	Accuracy: 0.9812	Time: 4.22 mins
+| Epoch:[24][300/476]	Train_Loss: 0.0706	Accuracy: 0.9806	Time: 6.23 mins
+| Epoch:[24][400/476]	Train_Loss: 0.0703	Accuracy: 0.9806	Time: 8.22 mins
+
+Epoch: 24/25	Val_Loss: 0.0412	Accuracy: 0.9887	F1-score: 0.9889	0.813mins
+=======================================================================
+Epoch 25/25
+lr: 0.000500
+--------------------------------------------------
+| Epoch:[25][100/476]	Train_Loss: 0.0725	Accuracy: 0.9788	Time: 2.18 mins
+| Epoch:[25][200/476]	Train_Loss: 0.0680	Accuracy: 0.9800	Time: 4.18 mins
+| Epoch:[25][300/476]	Train_Loss: 0.0726	Accuracy: 0.9779	Time: 6.18 mins
+| Epoch:[25][400/476]	Train_Loss: 0.0683	Accuracy: 0.9798	Time: 8.17 mins
+
+Epoch: 25/25	Val_Loss: 0.0403	Accuracy: 0.9887	F1-score: 0.9886	0.806mins
+=======================================================================
+Training complete in 258m 49s
+Best validation F1 score: 0.992377 at epoch: 9
