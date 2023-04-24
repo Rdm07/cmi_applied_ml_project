@@ -1,0 +1,15 @@
+artifact_uri: /mnt/vol_d/VSCode_Workspace/cmi_applied_ml_project/log/MLFlow_Logs/mlruns/357588320615944214/cbec509ff16c40a6b998cf46c72cfec5/artifacts
+end_time: 1682358158949
+entry_point_name: ''
+experiment_id: '357588320615944214'
+lifecycle_stage: active
+run_id: cbec509ff16c40a6b998cf46c72cfec5
+run_name: melodic-bee-576
+run_uuid: cbec509ff16c40a6b998cf46c72cfec5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682358158931
+status: 3
+tags: []
+user_id: rohan

@@ -1,0 +1,15 @@
+artifact_uri: /mnt/vol_d/VSCode_Workspace/cmi_applied_ml_project/log/MLFlow_Logs/mlruns/357588320615944214/938d12deb369433ebee77f56009144fb/artifacts
+end_time: 1682358114446
+entry_point_name: ''
+experiment_id: '357588320615944214'
+lifecycle_stage: active
+run_id: 938d12deb369433ebee77f56009144fb
+run_name: sedate-foal-666
+run_uuid: 938d12deb369433ebee77f56009144fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682358114430
+status: 3
+tags: []
+user_id: rohan

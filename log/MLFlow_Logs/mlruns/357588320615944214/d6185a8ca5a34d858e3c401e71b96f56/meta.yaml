@@ -1,0 +1,15 @@
+artifact_uri: /mnt/vol_d/VSCode_Workspace/cmi_applied_ml_project/log/MLFlow_Logs/mlruns/357588320615944214/d6185a8ca5a34d858e3c401e71b96f56/artifacts
+end_time: 1682358439569
+entry_point_name: ''
+experiment_id: '357588320615944214'
+lifecycle_stage: active
+run_id: d6185a8ca5a34d858e3c401e71b96f56
+run_name: legendary-midge-801
+run_uuid: d6185a8ca5a34d858e3c401e71b96f56
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682358439551
+status: 3
+tags: []
+user_id: rohan

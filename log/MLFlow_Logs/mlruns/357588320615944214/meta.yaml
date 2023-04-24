@@ -1,0 +1,6 @@
+artifact_location: /mnt/vol_d/VSCode_Workspace/cmi_applied_ml_project/log/MLFlow_Logs/mlruns/357588320615944214
+creation_time: 1682358114191
+experiment_id: '357588320615944214'
+last_update_time: 1682358114191
+lifecycle_stage: active
+name: Classification of Playing Cards using pre-trained CNN models

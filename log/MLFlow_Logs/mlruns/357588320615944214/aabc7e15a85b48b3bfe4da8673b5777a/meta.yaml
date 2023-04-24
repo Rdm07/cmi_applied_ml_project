@@ -1,0 +1,15 @@
+artifact_uri: /mnt/vol_d/VSCode_Workspace/cmi_applied_ml_project/log/MLFlow_Logs/mlruns/357588320615944214/aabc7e15a85b48b3bfe4da8673b5777a/artifacts
+end_time: 1682358141796
+entry_point_name: ''
+experiment_id: '357588320615944214'
+lifecycle_stage: active
+run_id: aabc7e15a85b48b3bfe4da8673b5777a
+run_name: grandiose-dog-425
+run_uuid: aabc7e15a85b48b3bfe4da8673b5777a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682358141779
+status: 3
+tags: []
+user_id: rohan
