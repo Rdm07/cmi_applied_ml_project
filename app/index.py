@@ -43,13 +43,13 @@ def submit_file():
             flash('No file selected for uploading')
             return redirect(request.url)
         if file:
-            filename = secure_filename(file.filename)
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            # filename = secure_filename(file.filename)
+            # file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 
             pred_class_lab, pred_prob = classify_image(model, file, device)
-            img = os.path.abspath(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            # img = os.path.abspath(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 
-            return render_template('result.html', image=img, pred_class=pred_class_lab, pred_prob=pred_prob)
+            return render_template('result.html', pred_class=pred_class_lab, pred_prob=pred_prob)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
