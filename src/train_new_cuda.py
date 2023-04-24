@@ -1,5 +1,6 @@
 import os, sys, time, random
 import argparse, copy
+import torchvision
 
 import numpy as np
 import torch.optim as optim
@@ -104,7 +105,9 @@ def run_validation(model, criterion, val_loader):
 			inputs = inputs.to(torch.float).to(device)
 			targets = targets.to(torch.long).to(device)
 			output = model(inputs)
-			if type(output) == tuple:
+			
+			# For InceptionNet_v3
+			if type(output) == torchvision.models.inception.InceptionOutputs:
 				output,_ = output
 			
 			_, preds = torch.max(output.data, 1)
@@ -152,9 +155,9 @@ def run_training(model, criterion, num_epochs, trainer = args.trainer, train_loa
 		else: lr = args.lr/20
 
 		if trainer == 'adam':
-			optimizer = optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=lr)
+			optimizer = optim.Adam(params=filter(lambda p: p.requires_grad, model.parameters()), lr=lr)
 		elif trainer == 'sgd':
-			optimizer = optim.SGD(filter(lambda p: p.requires_grad, model.parameters()), lr=lr, momentum=0.9, weight_decay=args.weight_decay)
+			optimizer = optim.SGD(params=filter(lambda p: p.requires_grad, model.parameters()), lr=lr, momentum=0.9, weight_decay=args.weight_decay)
 		else:
 			raise Exception('Select optimiser (trainer) as adam or sgd')
 		
@@ -174,7 +177,9 @@ def run_training(model, criterion, num_epochs, trainer = args.trainer, train_loa
 
 			optimizer.zero_grad()
 			output = model(inputs)
-			if type(output) == tuple:
+
+			# For InceptionNet_v3
+			if type(output) == torchvision.models.inception.InceptionOutputs:
 				output,_ = output
 			
 			_, preds = torch.max(output.data, 1)
