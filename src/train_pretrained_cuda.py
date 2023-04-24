@@ -1,10 +1,10 @@
 import os, sys, time, random
 import argparse, copy
+import torchvision
 
 import numpy as np
 import torch.optim as optim
 import torch.nn as nn
-import torchvision
 
 from torchvision import transforms
 from sklearn.metrics import accuracy_score, hamming_loss, roc_auc_score, f1_score
