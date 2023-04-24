@@ -7,6 +7,7 @@ from torchvision import transforms
 
 # Local Imports
 from utils import *
+from predict import *
 
 warnings.filterwarnings("ignore")
 
@@ -77,37 +78,6 @@ test_loader = DataLoader(test_set, batch_size=args.batch_size, shuffle=True, num
 model_folder = args.checkpoint_folder
 model_path = os.path.join(model_folder, args.model_name)
 
-# Function to generate predictions for each model on the test dataset
-def run_test(model, test_loader):
-	model.eval()
-	pred_labels = []
-	orig_labels = []
-
-	ntotal = 0
-	running_loss = 0.0
-	with torch.no_grad():
-		for ix, batch in enumerate(test_loader):
-			inputs, targets = batch
-
-			inputs = inputs.to(torch.float).to(device)
-			targets = targets.to(torch.long).to(device)
-			output = model(inputs)
-			if type(output) == tuple:
-				output,_ = output
-			
-			_, preds = torch.max(output.data, 1)
-
-			targets = torch.squeeze(targets).data.cpu().tolist()
-			orig_labels = orig_labels + targets
-
-			preds = torch.squeeze(preds).data.cpu().tolist()
-			pred_labels = pred_labels + preds
-	
-	orig_labels = np.array(orig_labels).reshape(-1,1)
-	pred_labels = np.array(pred_labels).reshape(-1,1)
-
-	return orig_labels, pred_labels
-
 # Function to evaluate models
 def eval_model(test_labels, pred_labels):
 	# Computing Accuracy
@@ -161,7 +131,7 @@ def main():
 	
 	##################
 	print('Start predicting ... ')
-	orig_labels, pred_labels = run_test(model=model, test_loader=test_loader)
+	orig_labels, pred_labels = run_test(model=model, test_loader=test_loader, device=device)
 
 	storing_metric(args.model_name_pretty, orig_labels, pred_labels)
 
