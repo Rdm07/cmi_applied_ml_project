@@ -25,8 +25,8 @@ parser.add_argument('--checkpoint', type=str, help='Folder to save model checkpo
 parser.add_argument('--data_folder', type=str, help="Folder containing all subfolders of training/validation/testing data")
 parser.add_argument('--model_folder', type=str, help="Folder containing saved model")
 parser.add_argument('--model_name', type=str, help="Saved model name")
-parser.add_argument('--mean', type=float, default=None, help="Mean of channels from pre-trained model")
-parser.add_argument('--std', type=float, default=None, help="Std Dev of channels from pre-trained model")
+parser.add_argument('--mean', nargs="+", type=float, default=None, help="Mean of channels from pre-trained model")
+parser.add_argument('--std', nargs="+", type=float, default=None, help="Std Dev of channels from pre-trained model")
 args = parser.parse_args()
 
 print('Batch Size: {}'.format(args.batch_size))
