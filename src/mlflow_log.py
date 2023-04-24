@@ -131,7 +131,7 @@ def main():
 	
 	##################
 	print('Start predicting ... ')
-	orig_labels, pred_labels = run_test(model=model, test_loader=test_loader, device=device)
+	orig_labels, pred_labels = run_test_loader(model=model, test_loader=test_loader, device=device)
 
 	storing_metric(args.model_name_pretty, orig_labels, pred_labels)
 
