@@ -41,7 +41,7 @@ def create_label_dict(list1: list) -> dict:
 		if item[0] in dict1:
 			continue
 		else:
-			dict1[item[0]] = item[2]
+			dict1[int(item[0])] = item[2]
 
 	return dict1
 
